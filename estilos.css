@@ -398,7 +398,7 @@ p{
 #check {
     display: none;
 }
-
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 @media screen and (max-width: 600px) {
     .logo_img {
         padding-left: 20px;
@@ -436,7 +436,7 @@ p{
         left: 0;
     }
 
-}
+}/*
 
 
 /* Fin Header*/
@@ -1169,14 +1169,15 @@ video::-webkit-media-controls-play-button:hover{
     }
     main{
         margin-left: 20px;
-        margin-right: 20px;
+        margin-right: 30px;
         flex-direction: column;
     }
     
     header{
         flex-direction: column;
+    
     }
-
+  
     .menu-barra{
             flex-direction: column;
     }
@@ -1198,7 +1199,9 @@ video::-webkit-media-controls-play-button:hover{
     ::placeholder{
         font-size: 15px;
     }
-
+    table{
+        width: fit-content;
+    }
     th{
         font-size: 20px;
     }
@@ -1230,4 +1233,11 @@ video::-webkit-media-controls-play-button:hover{
     width:20px;
     height: 20px;
 }
+    .programa-acordeon{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1200px){
+
 }

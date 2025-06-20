@@ -3,55 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio - Aquí Ascenso</title>
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>Giuliano Simeone festeja junto a Enzo Fernández</title>
+    <link rel="stylesheet" href="../estilos.css">
+    <link rel="icon" href="../img/favicon.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
 </head>
 <body>
-
-    <div class="intro">
-        <div class="logo-header">
-        <div class="circulo"></div>
-            <img src="img/logo_portada.png" alt="logo_intro">
-        </div>
-        <img src="img/img-logo-news/img-portada.png" width="100%">
-    </div>
-  
-    <script src="app.js"></script>
-  
     <header>
         <nav class="menu-barra">
-            <input type="checkbox" id="check">
-            <label for="check" class="menu-boton">
-                <span class="material-symbols-outlined">menu</span>
-            </label>
             <div class="logo_img">
-                <a href="index.html"><img src="./img/img-logo-aquiascenso.png" alt="logo aqui ascenso"></a>
+                <a href="../index.html"><img src="../img/img-logo-aquiascenso.png" alt="logo aqui ascenso"></a>
             </div>
-            
             <ul class="botones-menu">
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/noticias.html">Noticias</a></li>
-                <li><a href="./pages/resultados.html">Resultados</a></li>
-                <li><a href="./pages/torneos.html">Torneos</a></li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./noticias.html">Noticias</a></li>
+                <li><a href="./resultados.html">Resultados</a></li>
+                <li><a href="./torneos.html">Torneos</a></li>
             </ul>
             
             <div class="buscador">
                 <input type="text" class="buscar-input" placeholder="| Buscar...">
-                <button class="buscar-boton"><a href=""><img src="./img/icono-busqueda.png" alt="icono-buscar" class="icono-buscar"></a></button>
+                <button class="buscar-boton"><a href=""><img src="../img/icono-busqueda.png" alt="icono-buscar" class="icono-buscar"></a></button>
             </div>
         </nav>
     </header>
-
     <main>
-        <h1>Ignorar esta página</h1>
-        <h3 class="h3-naranja">Ya hice macana con github intentando borrar videos y resubirlos cortados(?) y me da miedo tener q volver a hacer otro repo si intento eliminar esta pagina</h3>
-    </main>
+        <div class="info-chica-noticias">
+            <a href="./torneos.html"><h5 class="h5-gris">Resultados ⮞ <span class="h5-naranja">galeria</span></h5></a> 
+        </div>
+        <div class="contenedor-foto-grande">
+        <h2 class="h2-negro">Giuliano Simeone festeja junto a Enzo Fernández</h2>
+        <h3 class="h3-naranja">Foto: Marcelo Carroll</h3>
+        <img src="../img/galeria/galeria-imagen2.jpg" alt="Giuliano Simeone festeja junto a Enzo Fernández. Foto: Marcelo Carroll" class="foto-grande">
+        </div>
 
+    </main>
     <footer>
         <div class="redes">
             <svg xmlns="http://www.w3.org/2000/svg" width="226" height="34" viewBox="0 0 226 34" fill="none">
@@ -74,31 +62,10 @@
             </svg>
         </div>
         <div class="footer-botones-links">
-            <p>©2025 Aquí Ascenso</p>
+            <p>© 2025 Aquí Ascenso</p>
             <a href="https://x.com/aquiascenso">Aqui Ascenso</a>
             <a href="https://x.com/argentina">Selección Argentina</a>
         </div>
     </footer>
 </body>
 </html>
-<!--
-
-SUBIR A MAIN GIT ir a consola.
-escribir |  git status
-            git add . (el punto añade todo los cambios, otherwise poner nombre especifico file)
-            git commit -m "texto descripcion q se cambio"
- 
-            git push -u origin main
-----------------------------------
-            git pull para llamar los cambios hechos en github x otra personas, hacer esto antes de empezar a cambiar algo x si le pusieron notas o cosas asi)
-
-
-----------------------------------
-
-SUBIR A UNA RAMA:
-            git status
-            git add . (el punto añade todo los cambios, otherwise poner nombre especifico file)
-            git commit -nombrerama "texto descripcion q se cambio"
-
-            git push -u origin nombrerama
--

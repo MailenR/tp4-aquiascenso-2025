@@ -12,36 +12,27 @@ window.addEventListener('DOMContentLoaded', ()=>{
 }); 
 
 function App() {
+  this.processingButton = function (event) {
+    const btn = event.currentTarget;
+    const carrusel = btn.closest('.carrusel');
+    const track = carrusel.querySelector('#track');
+    const slide = track.querySelector('.slide');
+    const slideWidth = slide.offsetWidth + 20; // ancho + margen
+    const visibleWidth = carrusel.querySelector('.carrusel-container').offsetWidth;
+    const trackWidth = track.scrollWidth;
 
-    window.onload = function(event) {
-        var app = new App();
-        window.app = app;
-    
+    let currentLeft = track.style.left === "" ? 0 : parseFloat(track.style.left) * -1;
+
+    if (btn.dataset.button === "button-prev" && currentLeft > 0) {
+      track.style.left = `${-1 * (currentLeft - slideWidth)}px`;
     }
 
-    App.prototype.procesingButton = function(event) {
-
-        const btn = event.currentTarget;
-        const carruselList = event.currentTarget.parentNode;
-        const track = event.currentTarget.parentNode.querySelector('#track');
-        const carrusel = track.querySelector('.carrusel');
-
-        const carruselWidth = carrusel[0].offsetWidth;
-        const trackWidth = track.offsetWidth;
-        const listWidth = carruselList.offsetWidth;
-
-        track.style.left == "" ? leftPosition = track.style.left = 0 : leftPosition = parseFloat(track.style.left.slice(0,-2) *-1);
-        btn.dataset.button == "button-prev" ? prevAction(leftPosition, carruselWidth, track) : nextAction(leftPosition,trackWidth, listWidth, carruselWidth, track)
+    if (btn.dataset.button === "button-next" && (currentLeft + visibleWidth) < trackWidth) {
+      track.style.left = `${-1 * (currentLeft + slideWidth)}px`;
     }
-
-    let prevAction = (leftPosition, carruselWidth, track) => {
-        if (leftPosition > 0) {
-            track.style.left = '${ -1 * (leftPosition - carruselWidth)} px';
-        }
-    }
+  };
 }
 
-let nextAction = (leftPosition, trackWidth, listWidth, carruselWidth, track) => {
-    if (leftPosition < (trackWidth - listWidth))
-    track.style.left = '$(-1 * (leftPosition + carruselWidth))px';
-}
+window.onload = () => {
+  window.app = new App();
+};

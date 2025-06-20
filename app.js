@@ -17,7 +17,7 @@ function App() {
     const carrusel = btn.closest('.carrusel');
     const track = carrusel.querySelector('#track');
     const slide = track.querySelector('.slide');
-    const slideWidth = slide.offsetWidth + 20; // ancho + margen
+    const slideWidth = slide.offsetWidth + 20; 
     const visibleWidth = carrusel.querySelector('.carrusel-container').offsetWidth;
     const trackWidth = track.scrollWidth;
 

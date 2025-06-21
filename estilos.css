@@ -100,6 +100,9 @@ main{
     margin-left: 200px;
     margin-right: 200px;
 }
+.lectura-larga{
+    width: 80%;
+}
 footer{
     background-color: #114D36;
     color: white;
@@ -243,7 +246,12 @@ p{
 .p-inter{
   font-family: "inter";  
 }
-
+.parrafo-lectura{
+    width: 60%;
+}
+.p-italico{
+    margin-bottom: 10px ;
+}
 .p-inter-noticias{
     position: relative;
     color: white;
@@ -328,6 +336,11 @@ p{
     background-color: #97a6a0;
     margin: 0px;
 }
+.p-italico-gris{
+    color: #7d7d7d;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
 
 /* Inicio Header*/
     /* Elementos*/
@@ -399,7 +412,9 @@ p{
 #check {
     display: none;
 }
-/*------------------------------------------------------
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Se intentó hacer el menu hamburguesa, sin embargo termino no funcionando, cuando se activa no deja volverse a "guardar" y se queda cubriendo la página, por ende optamos por hacer que simplemente los contenidos del nav se flexeen en column en vez del row en el que estaban en la version escritorio
+
 @media screen and (max-width: 600px) {
     .logo_img {
         padding-left: 20px;

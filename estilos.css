@@ -5,6 +5,7 @@
 Colores: 
 VERDE: #114D36
 NARANJA: #C87930
+
 */
 
 /*
@@ -398,7 +399,7 @@ p{
 #check {
     display: none;
 }
-/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+/*------------------------------------------------------
 @media screen and (max-width: 600px) {
     .logo_img {
         padding-left: 20px;
@@ -436,7 +437,7 @@ p{
         left: 0;
     }
 
-}/*
+}
 
 
 /* Fin Header*/
@@ -1238,6 +1239,86 @@ video::-webkit-media-controls-play-button:hover{
     }
 }
 
-@media screen and (max-width:1200px){
-    
+@media screen and (max-width:1100px){
+     body{
+        width: 100%;
+        justify-content: center;
+        justify-self: center;
+        justify-items: center;
+    }
+
+    main{
+        flex-direction: column;
+    }
+    .contenedor-resultados-html{
+        display: flex;
+        flex-direction: column;
+    }
+    .programa-acordeon{
+        max-width: 200px;
+        display: flex;
+        flex-direction: column;
+    }
+    .informacion-acordeon{
+        display: flex;
+        flex-direction: column;
+    }
+        .menu-barra{
+            flex-direction: column;
+    }
+
+    .botones-menu{
+        display: flex;
+        flex-direction: column;  
+    }
+    .botones-menu a{
+        font-size: 20px;
+    }
+
+    .contenedor-resultados-html{
+        flex-direction: column;
+    }
+    input{
+        font-size: 15px;
+    }
+    ::placeholder{
+        font-size: 15px;
+    }
+    table{
+        width: fit-content;
+    }
+    th{
+        font-size: 20px;
+    }
+
+    .tabla-subtitulo{
+        font-size: 24px;
+    }
+    .h4-inter{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    summary{
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .p-italico{
+    font-size: 18px;
+    margin-bottom: 10px;
+    }
+    .h4-verde-acordeon{
+        font-weight: 600;
+    }
+    .acordeon-abierto:hover p{
+        font-weight: 800;
+    }
+    .ubicacion-acordeon img{
+    color: #114D36;
+    width:20px;
+    height: 20px;
+}
+    .programa-acordeon{
+        width: 100%;
+    }
 }
